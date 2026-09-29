@@ -2,19 +2,11 @@
 
 int main (void)
 {
-    unsigned int x;
-    int b;
-    
-    printf("input a number :");
-    scanf("%ui", &x);
+    int sec;
+     printf("Input the second :");
+     scanf("%i", &sec);
 
-    for (b=0; x!=0; x >>= 1)
-    {
-        if(x&1)
-        b++;
-    }
+     printf("The time is : %i:%i:%i\n", (sec/60)/60, (sec%3600)/60, sec%60);
 
-    printf("The result is : %i\n", b);
-
-    return 0;
+     return 0;
 }
